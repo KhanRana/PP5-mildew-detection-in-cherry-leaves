@@ -10,3 +10,5 @@ cloudinary_python.txt
 kaggle.json
 venv
 .ipynb_checkpoints
+inputs/cherry_dataset/cherry-leaves/test
+inputs/cherry_dataset/cherry-leaves/train
