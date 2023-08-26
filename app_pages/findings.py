@@ -55,7 +55,7 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
 
 
 def findings_page():
-    st.write("### Cells Visualizer")
+    st.write("### Leaves Visualiser")
     st.info(
         f"* The client is interested in conducting a study to visually "
         f"differentiate a healthy cherry leaf from one with powdery mildew.")
