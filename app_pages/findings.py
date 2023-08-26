@@ -52,3 +52,51 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
     else:
         print("The label you selected doesn't exist.")
         print(f"The existing options are: {labels}")
+
+
+def findings_page():
+    st.write("### Cells Visualizer")
+    st.info(
+        f"* The client is interested in conducting a study to visually "
+        f"differentiate a healthy cherry leaf from one with powdery mildew.")
+
+    version = 'v1'
+    if st.checkbox("Difference between average and variability image"):
+
+        avg_mildew = plt.imread(
+            f"outputs/{version}/avg_var_powdery_mildew.png")
+        avg_healthy = plt.imread(
+            f"outputs/{version}/avg_var_healthy.png")
+
+        st.warning(
+            f"Average Image shows that powdery-mildew affected leaves are "
+            f"lighter in color; Variability Image shows variance around the edges in "
+            f"healthy leaves compared to no significant in afected leaves. "
+            f"Also there is difference in the colour pigment of the average "
+            f"images is seen for both labels.")
+
+        st.image(avg_mildew,
+                 caption='Powdery Mildew Leaf- Average and Variability')
+        st.image(avg_healthy,
+                 caption='Healthy Leaf- Average and Variability')
+        st.write("---")
+
+    if st.checkbox("Differences between average powdery mildew and average healthy leaves"):
+        diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
+
+        st.warning(
+            f"* We notice this study shows "
+            f"patterns where we could differentiate one from another.")
+        st.image(diff_between_avgs, caption='Difference between average images')
+
+    if st.checkbox("Image Montage"):
+        st.write("* To refresh the montage, click on the 'Create Montage' button")
+        data_dir = 'inputs/cherry_dataset/cherry-leaves'
+        labels = os.listdir(data_dir + '/validation')
+        label_to_display = st.selectbox(
+            label="Select label", options=labels, index=0)
+        if st.button("Create Montage"):
+            image_montage(dir_path=data_dir + '/validation',
+                          label_to_display=label_to_display,
+                          nrows=8, ncols=3, figsize=(10, 25))
+        st.write("---")
