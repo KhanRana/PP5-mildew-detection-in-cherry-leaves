@@ -33,9 +33,14 @@ def load_model_and_predict(my_image, version):
     if pred_class == target_map[0]:
         pred_proba = 1 - pred_proba
 
-    st.write(
-        f"The predictive analysis indicates the sample cell is "
-        f"**{pred_class.lower()}** with malaria.")
+    if pred_class.lower() == 'healthy':
+        st.write(
+            f"The predictive analysis indicates the leaf is "
+            f"**healthy**.")
+    else:
+        st.write(
+            f"The predictive analysis indicates the leaf contains "
+            f"**powdery mildew**.")
 
     return pred_proba, pred_class
 
