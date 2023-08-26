@@ -10,7 +10,7 @@ def hypothesis_page():
         f"that could be anywhere on the leaf, that can differentiate them from a health leaf. \n\n"
         f"* An Image Montage shows that powdery-mildew affected leaves have "
         f"patches, and have discolored. \n\n"
-        f"Average Image shows that powdery-mildew affected leaves are " 
+        f"* Average Image shows that powdery-mildew affected leaves are " 
         f"lighter in color; Variability Image shows variance around the edges in "
         f"healthy leaves compared to no significant in afected leaves. "
         f"and; Difference between Averages studies also also reveal similar affect to "
