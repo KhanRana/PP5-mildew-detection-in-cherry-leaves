@@ -11,7 +11,7 @@ from app_pages.technical import performance_metrics_page
 app = MultiPage(app_name="Mildew Detector")  # Create an instance of the app
 
 # Add your app pages here using .add_page()
-app.add_page("Quick Project Summary", summary_page)
+app.add_page("Brief Project Summary", summary_page)
 app.add_page("Leaves Visualiser", findings_page)
 app.add_page("Mildew Detection", prediction_page)
 app.add_page("Project Hypothesis", hypothesis_page)

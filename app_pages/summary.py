@@ -22,7 +22,7 @@ def summary_page():
         f"humidity (Grove & Boal, 1991a).\n"
         f"\n**Project Dataset**\n"
         f"* The available dataset contains 4208 images: "
-        f"2104 heathy and 2104 powdery_mildew"
+        f"2104 each for heathy and powdery mildew"
     )
     st.write(
         f"* For additional information, please visit and **read** the "
