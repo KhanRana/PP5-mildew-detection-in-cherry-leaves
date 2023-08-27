@@ -18,5 +18,3 @@ app.add_page("Project Hypothesis", hypothesis_page)
 app.add_page("ML Performance Metrics", performance_metrics_page)
 
 app.run()  # Run the ap
-
-

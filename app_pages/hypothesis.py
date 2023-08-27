@@ -10,9 +10,7 @@ def hypothesis_page():
         f"differentiates them from healthy leaves. \n\n"
         f"* An Image Montage shows that powdery-mildew affected leaves have "
         f"patches of white coating, and have discolored. \n\n"
-        f"* Average Image shows that powdery mildew affected leaves are " 
-        f"lighter in color; Variability Image shows variance around the edges in "
-        f"healthy leaves compared to no significant in afected leaves. "
-        f"and; Difference between Averages studies also also reveal similar affect to "
-        f"variabillity."
+        f"* Average Image shows that powdery mildew affected leaves are "
+        f"lighter in color; Variability and average difference Images show the difference "
+        f"around the middle in the healthy leaves compared to no significant in the affected leaves."
     )
