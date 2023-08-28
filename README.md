@@ -70,7 +70,7 @@ We understand that ML can be used to identify images and differentiate one from 
 
 3. The customer needs a dashboard.
 
-5. The project can be broken down into epics and sotries. Please see [User Stories](.github/ISSUE_TEMPLATE/user-story.md)
+5. The project can be broken down into epics and sotries. Please see [User Stories](documents/stories/user_stories.md)
 
 
 4. The customere should be able to predict if a leaf is helthy or contains powdery mildew.
