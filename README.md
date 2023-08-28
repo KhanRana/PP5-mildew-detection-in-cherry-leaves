@@ -1,62 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-## Codeanywhere Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Codeanywhere Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Codeanywhere Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use. 
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-
-## Dataset Content
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
-* The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
-
-
-
-## Business Requirements
+## Project Business Requirements
 The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.  The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
 
 To save time in this process, the IT team suggested an ML system that detects instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project for all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
@@ -66,17 +8,78 @@ To save time in this process, the IT team suggested an ML system that detects in
 * 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 
-## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+## Hypothesis
+* Powdery mildew is a white, dusty coating that differentiates them from healthy leaves
+### Validation
+ * I will validate the hypothesis by collecting image dataset from the client and creating image montage for both hethy and powdery mildew affected leaves
+ * I will test the hypothesis by average image analysis
+ * I will also test the hypothesis by analysisg the difference between average images
+
+## Setting up the work environment
+
+I used Code Institute student template for Codeanywhere from [template](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves). However, I used VS Code instead of Codeanywhere. 
+
+### Setting up local environment
+
+1. I use this template to create my GitHub project repo 
+
+2. Opened my VS Code and create a folder where I clone my github repo 
+    <code>cd folder/to/clone-into/</code>
+3. Clone the repo <code>git clone https://github.com/KhanRana/PP5-mildew-detection-in-cherry-leaves</code>
+
+4. Create a new `venv` by <code>python -m venv venv </code> - the name of the virtual env is also `venv`.
+
+5. The python version used is throughout is `python 3.9`
+
+7. Open a new terminal and <code>pip install -r requirements.txt</code>
+
+8. In the terminal type <code>pip install jupyter</code>
+
+9. Install `ipykernel`, which provide `IPython` kernel for jupyter server to run in VS environment
+
+10. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
+
+11. Click the button Not Trusted and choose Trust.
+
+Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.9.1 as installed. To confirm this you can use <code>! python --version</code> in a notebook code cell.
+
+
+## Dataset Content
+* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
+* The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+The client has two business requirments: 
+
+As the client is interested in in differenciating a healthy leaf from a mildew contained, it make it a calssification problem. We have should have dataset of two classes: healthy; and powdery mildew". We will then check if the data is balanced: means both classes have similar label frequency. If the frequency is similar then the data is balanced, and we can proceed to the further analysis. The first of which would be to create an `Image Montage` to visually see the difference between the two using the known dataset. An `Image Montage` provides examples from each dataset. We also look at average image and variability image for both classes to see the pattens on both leaves.
+
+If the dataset is balnced than it would not need extensive cleaning and we can proceed to the answer the second requirement: predicting whether a new leaf is healthy of powdery mildew contained. For the image prediction we will use `Convolution Neural Network` to train the ML model. The model can identify patterns, colors, and variation to classify the leaves. We will develop a dashboard that would have both features of showing image montage and a prediction feature. This will improve the client operations by minimising human efforts to identify affected plants. The client should be able to use the dashboard for any number of cherry leaves and provide healthy fruit to their customers.
+
+In the following section we will look at the case for this study and see if it makes a ML business case.
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
 
+In this section we will look at individual elements of the case and justify how it is a ML business case.
+
+1. The client would like a tool to identify healthy cherry leaves from powdery mildew contained.
+We understand that ML can be used to identify images and differentiate one from the other if a a model has been trained to an acceptable accuracy level.
+
+2. The problem can not be solved using traditional data analysis approaches therefore we would need an ML tool to tackle the challenge.
+
+3. The customer needs a dashboard.
+
+5. The project can be broken down into epics and sotries. Please see [User Stories](.github/ISSUE_TEMPLATE/user-story.md)
+
+
+4. The customere should be able to predict if a leaf is helthy or contains powdery mildew.
+
+6. The client has provided the data and there is no ethical concern
+7. An accuracy of 97% has been agreed with the client
+8. Project inputs are image data and output is a dashboard, which is shown in sectioin ----.
+9. The data suggest it is a classification model.
+10. The customer will be able to scale up their operations to other farms by minimising manual work.
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
