@@ -70,16 +70,29 @@ We understand that ML can be used to identify images and differentiate one from 
 
 3. The customer needs a dashboard.
 
-5. The project can be broken down into epics and sotries. Please see [User Stories](documents/stories/user_stories.md)
+4. The project can be broken down into epics and sotries. Please see [User Stories](documents/stories/user_stories.md)
+
+5. The client provided the data under an NDA (non-disclosure agreement), therefore the data should only be shared with professionals that are officially involved in the project. Please see [Dataset Content](#dataset-content)
 
 
-4. The customere should be able to predict if a leaf is helthy or contains powdery mildew.
+6. The customer can visaully see and differentiate healthy leaves from powdery mildew contained ones.
+Image montage can be created that shows both types of leaves 
+ 
+![Healthy Leaves](documents/pages/healthy.png)
+*Healthy*
 
-6. The client has provided the data and there is no ethical concern
-7. An accuracy of 97% has been agreed with the client
-8. Project inputs are image data and output is a dashboard, which is shown in sectioin ----.
+![Powdery Mildew Contained](documents/pages/mildew.png)
+*Powdery Mildew*
+
+The customer will also be able to predict if a leaf is helthy or contains powdery mildew by uploading images to the dashboard.
+
+7. An accuracy of 97% has been agreed with the client; however the model has been trained to a 99% accuracy.
+
+8. The input is a cherry leaf image and the output is a prediction of whether the cherry leaf is healthy or contains powdery mildew.
+
 9. The data suggest it is a classification model.
-10. The customer will be able to scale up their operations to other farms by minimising manual work.
+
+10. The customer will not supply the market with a compromised product.Furthermore, the customer will also be able to scale up their operations in detecting mildew to other farms by minimising manual work.
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
