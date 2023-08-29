@@ -14,6 +14,14 @@ def performance_metrics_page():
         f"outputs/{version}/labels_distribution.png")
     st.image(labels_distribution,
              caption='Labels Distribution on Train, Validation and Test Sets')
+    st.info(
+        f"* test - powdery_mildew: 422 images\n"
+        f"* test - healthy: 422 images\n"
+        f"* train - powdery_mildew: 1472 images\n"
+        f"* train - healthy: 1472 images\n"
+        f"* validation - powdery_mildew: 210 images\n"
+        f"* validation - healthy: 210 images"
+    )
     st.write("---")
 
     st.write("### Model History")

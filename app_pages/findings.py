@@ -70,11 +70,13 @@ def findings_page():
 
         st.warning(
             f"Average Image shows that powdery-mildew affected leaves are "
-            f"lighter in color; Variability Image shows purple around the middle in "
+            f"lighter in color; Variability Image shows purple around the edges in "
             f"the healthy leaves compared to the dark in the affected leaves. "
-            f"Also there is difference in the colour pigment of the average "
-            f"images is seen for both labels.")
-
+            f"This difference shows that there is less color variation "
+            f"in the middle. And as the affected leaves are lighter been "
+            f"the difference is barely noticable."
+        )
+        
         st.image(avg_mildew,
                  caption='Powdery Mildew Leaf- Average and Variability')
         st.image(avg_healthy,
@@ -86,7 +88,10 @@ def findings_page():
 
         st.warning(
             f"* We notice this study shows "
-            f"patterns where we could differentiate one from the other.")
+            f"patterns where we could differentiate one from the other. "
+            f"The image clearly shows the diffrence around the edges and not the middle "
+            f"The darker middle part shows less varaition in color of the both leaves."
+            )
         st.image(diff_between_avgs, caption='Difference between average images')
 
     if st.checkbox("Image Montage"):
