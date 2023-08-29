@@ -12,10 +12,10 @@ def hypothesis_page():
     st.success(
         f"* An Image Montage shows that powdery-mildew affected leaves have "
         f"patches of white coating, and have discolored. \n\n"
-        f"* Average image shows that powdery mildew affected leaves are "
+        f"* Average image also shows that powdery mildew affected leaves are "
         f"lighter in color.\n\n"
-        f"* Variability and Average Difference images show the variation "
-        f"around the edges in the healthy leaves "
-        f"compared to no significant in the affected leaves. "
-        f"While there is no visible variation in the middle of either."
+        f"* Variability and Average Difference images show no variation "
+        f"around the middle of either leaf; however, "
+        f"there is clear variation in contrast around the middle "
+        f"of the healthy leaf."
     )
