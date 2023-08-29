@@ -78,8 +78,8 @@ def findings_page():
             f"lighter in color; Variability Image shows purple around the edges in "
             f"the healthy leaves compared to the dark in the affected leaves. "
             f"This difference shows that there is less color variation "
-            f"in the middle. And as the affected leaves are lighter been "
-            f"the difference is barely noticable."
+            f"in the middle. And as the affected leaves are lighter in color overall "
+            f"therefore the difference is barely noticable."
         )
         
         st.image(avg_mildew,
