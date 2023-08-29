@@ -1,3 +1,22 @@
+# MILDEW DETECTION ON CHERRY LEAVES
+## Contents
+- [Project Business Requirements](#project-business-requirements)
+- [Hypothesis](#hypothesis)
+- [Setting UP](#setting-up-the-work-environment)
+- [Project Workflow](#project-workflow)
+    - [Business Understanding](#business-understanding)
+    - [Data Understanding](#data-understanding)
+    - [Data Preparatioin](#data-preparation)
+    - [Data Modelling](#data-modelling)
+    - [Data Evaluation](#data-evaluation)
+    - [Deployment](#deployment)
+- [Main Libraires](#main-data-analysis-and-machine-learning-libraries)
+- [Credits](#credits)
+- [Bugs](#bugs)
+- [Acknowledgements](#acknowledgements)
+
+
+
 ## Project Business Requirements
 
 The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute. The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
@@ -190,9 +209,9 @@ ML Dashboard has been developed and deployed to heroku.
         |Loss|0.0467|
         |Accuracy|0.9917|
 
-## Deployment
+#### Deployment
 
-### Heroku
+**Heroku**
 
 - The App live link is: https://detect-powdery-mildew-7c73e62a3b18.herokuapp.com/
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
