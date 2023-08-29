@@ -116,7 +116,7 @@ The client will also be able to predict if a leaf is healthy or contains powdery
 ### Data Preparation
 Please refer to [Data Preparation](jupyter_notebooks/data_collection.ipynb) and [Data Visualisation](jupyter_notebooks/data_visualisation.ipynb) for details.
 
-### Data Modelling
+### Data Modelling
 Please refer to [Data Modelling](jupyter_notebooks/data_modelling.ipynb) for details.
 
 ### Data Evaluation
