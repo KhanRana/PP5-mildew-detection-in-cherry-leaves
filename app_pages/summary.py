@@ -20,9 +20,12 @@ def summary_page():
         f"* In contrast to other fungi, powdery mildews do not need free water "
         f"to germinate but germination and fungal growth are favored by high "
         f"humidity (Grove & Boal, 1991a).\n"
-        f"\n**Project Dataset**\n"
+    )
+    st.info(f"\n**Project Dataset**\n"
         f"* The available dataset contains 4208 images: "
-        f"2104 each for heathy and powdery mildew"
+        f"2104 each for heathy and powdery mildew. "
+        f"Project dataset can be downloaded from "
+        f"[Project Dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)."
     )
     st.write(
         f"* For additional information, please visit and **read** the "
