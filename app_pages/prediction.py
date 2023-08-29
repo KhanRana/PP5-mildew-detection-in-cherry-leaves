@@ -1,3 +1,7 @@
+"""
+The code has been taken from Code Institute walkthrough project, and
+modified for the project
+"""
 import streamlit as st
 from PIL import Image
 import numpy as np
@@ -12,6 +16,9 @@ from src.machine_learning.predictive_analysis import (
 
 
 def prediction_page():
+
+    st.write("### Mildew Detection")
+
     st.info(
         f"* The client is interested in predicting if a cherry leaf is "
         f"healthy or contains powdery mildew."

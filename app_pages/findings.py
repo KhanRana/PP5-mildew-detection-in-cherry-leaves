@@ -1,3 +1,8 @@
+"""
+The code has been taken from Code Institute walkthrough project, and
+modified for the project
+"""
+
 import streamlit as st
 import os
 import pandas as pd

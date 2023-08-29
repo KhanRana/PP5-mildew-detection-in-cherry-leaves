@@ -190,11 +190,11 @@ ML Dashboard has been developed and deployed to heroku.
         |Loss|0.0467|
         |Accuracy|0.9917|
 
-#### Deployment
+## Deployment
 
-**Heroku**
+### Heroku
 
-- The App live link is: https://YOUR_APP_NAME.herokuapp.com/
+- The App live link is: https://detect-powdery-mildew-7c73e62a3b18.herokuapp.com/
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
@@ -202,29 +202,33 @@ ML Dashboard has been developed and deployed to heroku.
 2. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+5. The deployment process should happen smoothly if all deployment files are fully functional. 
+6. The slug size was too large therefore I added large files which are not required for the app to the .slugignore file.
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+Following main libraries were used in the project
+- **numpy** It is a foundation to pandas and matploblib, both libraries have been built on it. It is used to convert the images into an array for analysis and ML training, calculating means and sd. 
+- **pandas** It is used to manipulate dataset. For example we used pandas dataframe to save image prediction report.
+- **matplotlib** It is used to plot images shuch as agmented images and data images.
+- **seaborn** It is used to plot image dataset, especially with multiple axis and more features. For example, we used it to plot image montage.
+- **tensorflow** ML framework that is used to build, train and validate the model
+- **streamlit** It is used to build the dashboard
+- **keras** It is used for image analysis such as augmentation and ML model training.
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
-
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- The code for data modelling, visualisation and ML model creation, training, and deployment has been taken from Code Institute lessons and walkthrough project.
+- The dashboard and readme.md file has been built using the provided tamplates
+- Instructions on how to implement CNN form validation on the Sign-Up page were taken from [Tensorflow Zero to Hero](https://www.youtube.com/watch?v=KNAWp2S3w94&list=PLZKsYDC2S5rM6yKBs5ParXS6RWda6iAnK).
 
-### Media
+## Acknowledgements
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+I would like to acknowledge the following people who have helped me with completing this project:
 
-## Acknowledgements (optional)
-
-- Thank the people that provided support throughout this project.
+ - My family for their support and encouragement to take up this cahllenge
+ - The Code Institute support team who have helped me throughout the course
+ - I would also like to thank my mentor who has provided guidance and valueable feedback
+ - Last but not least a special thanks to the course tutor and content developers, who have put an immense amout of work and consideration in creation and delivery of the course.

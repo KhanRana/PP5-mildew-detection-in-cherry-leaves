@@ -1,3 +1,7 @@
+"""
+The code has been taken from Code Institute walkthrough project, and
+modified for the project
+"""
 import numpy as np
 import pandas as pd
 import os
