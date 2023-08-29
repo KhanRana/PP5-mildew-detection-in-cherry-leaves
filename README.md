@@ -224,6 +224,9 @@ Following main libraries were used in the project
 - The dashboard and readme.md file has been built using the provided tamplates
 - Instructions on how to implement CNN form validation on the Sign-Up page were taken from [Tensorflow Zero to Hero](https://www.youtube.com/watch?v=KNAWp2S3w94&list=PLZKsYDC2S5rM6yKBs5ParXS6RWda6iAnK).
 
+## Bugs
+There are no known bugs in the project. However, as the project is a binary classification model, any image of the required format can be uploaded and the model will classify it as either helathy or powdery mildew.
+
 ## Acknowledgements
 
 I would like to acknowledge the following people who have helped me with completing this project:
